@@ -2,6 +2,7 @@ const Footer = () => {
   return (
     <footer>
       <img src='Logo.svg' alt='restaurant logo' />
+
       <div>
         <h4>Doormat Navigation</h4>
         <a href='/' target='_blank'>
