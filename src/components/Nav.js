@@ -1,11 +1,25 @@
-const Nav = () => {
-  return (
-    <nav>
-      <img src='Logo.svg' alt='restaurant logo' />
+import { useState } from 'react';
 
-      <ul>
+const Nav = () => {
+  const [openNav, setOpenNav] = useState(false);
+  const toggleMenu = () => {
+    setOpenNav(!openNav);
+  };
+  return (
+    <nav className={`navbar ${openNav && 'open'}`}>
+      <a href='/' className='logo'>
+        <img src='Logo.jpg' alt='restaurant logo' />
+      </a>
+
+      <div className='burger-icon' onClick={toggleMenu}>
+        <div className='bar'></div>
+        <div className='bar'></div>
+        <div className='bar'></div>
+      </div>
+
+      <ul className={`nav-links ${openNav && 'nav-active'}`}>
         <li>
-          <a href='/'>HOME</a>
+          <a href='/'>HOME</a>S
         </li>
         <li>
           <a href='/'>ABOUT</a>
