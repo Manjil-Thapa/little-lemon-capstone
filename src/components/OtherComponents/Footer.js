@@ -1,7 +1,7 @@
 const Footer = () => {
   return (
     <footer>
-      <img src='Logo.svg' alt='restaurant logo' />
+      <img src='Logo.jpg' alt='restaurant logo' />
 
       <div>
         <h4>Doormat Navigation</h4>

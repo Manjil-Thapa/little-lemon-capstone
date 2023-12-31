@@ -1,18 +1,20 @@
 import './App.css';
-import Header from './components/Header';
-import Nav from './components/Nav';
-import Footer from './components/Footer';
-import { BrowserRouter } from 'react-router-dom';
-import BookingForm from './components/BookingForm';
+import Header from './components/OtherComponents/Header';
+import Footer from './components/OtherComponents/Footer';
+import AppContainer from './components/AppContainer/AppContainer';
+import HeroSection from './components/OtherComponents/HeroSection';
+import Specials from './components/OtherComponents/Specials';
+import Testimonials from './components/OtherComponents/Testimonials';
 
 function App() {
   return (
-    <BrowserRouter>
-      <Nav />
+    <AppContainer>
       <Header />
-      <BookingForm />
+      <HeroSection />
+      <Specials />
+      <Testimonials />
       <Footer />
-    </BrowserRouter>
+    </AppContainer>
   );
 }
 
