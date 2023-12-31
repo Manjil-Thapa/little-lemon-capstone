@@ -1,6 +1,6 @@
 const Testimonials = () => {
   return (
-    <section>
+    <section className='grid-testimonials'>
       <h2>Testimonials</h2>
       <div>
         <article>

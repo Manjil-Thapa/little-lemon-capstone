@@ -1,6 +1,6 @@
 const Footer = () => {
   return (
-    <footer>
+    <footer className='grid-footer'>
       <img src='Logo.jpg' alt='restaurant logo' />
 
       <div>

@@ -1,4 +1,31 @@
 .app-container {
   font-family: 'Karla', sans-serif;
   display: grid;
+  grid-template-rows: repeat(6, 200px);
+  grid-template-areas:
+    'header'
+    'hero'
+    'specials'
+    'testimonials'
+    'about'
+    'footer';
+}
+
+.grid-header {
+  grid-area: header;
+}
+.grid-hero {
+  grid-area: hero;
+}
+.grid-specials {
+  grid-area: specials;
+}
+.grid-testimonials {
+  grid-area: testimonials;
+}
+.grid-about {
+  grid-area: about;
+}
+.grid-footer {
+  grid-area: footer;
 }

@@ -1,6 +1,6 @@
 const About = () => {
   return (
-    <section>
+    <section className='grid-about'>
       <h2>Little Lemon</h2>
       <h3>Chicago</h3>
       <p>

@@ -1,6 +1,6 @@
 const Specials = () => {
   return (
-    <section>
+    <section className='grid-specials'>
       <div>
         <h2>Specials</h2>
         <button>Online Menu</button>

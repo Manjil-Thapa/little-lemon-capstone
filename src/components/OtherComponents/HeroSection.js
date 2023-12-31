@@ -1,6 +1,6 @@
 const HeroSection = () => {
   return (
-    <section>
+    <section className='grid-hero'>
       <div>
         <h1>Little Lemon</h1>
         <h3>Chicago</h3>
