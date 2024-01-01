@@ -4,6 +4,7 @@ import './App.css';
 import AppContainer from './components/AppContainer/AppContainer';
 import Header from './components/OtherComponents/Header';
 import Navbar from './components/OtherComponents/Nav';
+import BookingForm from './components/OtherComponents/BookingForm';
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <AppContainer>
         <Navbar />
         <Header />
+        <BookingForm />
       </AppContainer>
     </BrowserRouter>
   );
