@@ -155,7 +155,10 @@ label {
   border-radius: 4px;
 }
 
-.comfirm span {
+.confirm {
+  text-align: center;
+}
+.confirm span {
   color: blue;
 }
 

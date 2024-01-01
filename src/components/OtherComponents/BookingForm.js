@@ -13,7 +13,7 @@ const BookingForm = props => {
 
   const handleSubmit = event => {
     event.preventDefault();
-    props.SubmitForm(event);
+    props.submitForm(event);
   };
   return (
     <section>
