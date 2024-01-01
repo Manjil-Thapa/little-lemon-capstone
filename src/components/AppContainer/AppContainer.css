@@ -1,7 +1,8 @@
-.app-container {
+/* .app-container {
   font-family: 'Karla', sans-serif;
   display: grid;
-  grid-template-rows: repeat(6, 200px);
+  grid-template-columns: minmax(360px, auto);
+  grid-template-rows: repeat(6, 300px);
   grid-template-areas:
     'header'
     'hero'
@@ -10,22 +11,48 @@
     'about'
     'footer';
 }
-
 .grid-header {
   grid-area: header;
+  background-color: antiquewhite;
 }
 .grid-hero {
   grid-area: hero;
+  background-color: aqua;
 }
 .grid-specials {
   grid-area: specials;
+  background-color: bisque;
 }
 .grid-testimonials {
   grid-area: testimonials;
+  background-color: cadetblue;
 }
 .grid-about {
   grid-area: about;
+  background-color: darkgrey;
 }
 .grid-footer {
   grid-area: footer;
+  background-color: darkslategrey;
 }
+
+.grid-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 15%;
+}
+
+nav {
+  display: flex;
+}
+
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+} */

@@ -1,9 +1,26 @@
-// import { useState } from 'react';
+import { useState } from 'react';
 
-const Nav = () => {
+const Navbar = () => {
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setMenuOpen(!menuOpen);
+  };
   return (
-    <nav>
-      <ul>
+    <nav className={`navbar ${menuOpen && 'open'}`}>
+      <a href='/' className='logo'>
+        <img src='Logo.svg' alt='logo' />
+      </a>
+
+      {/* mobile */}
+      <div className='menu-icon' onClick={toggleMenu}>
+        <div className='bar'></div>
+        <div className='bar'></div>
+        <div className='bar'></div>
+      </div>
+
+      {/* nav items */}
+      <ul className={`nav-links ${menuOpen && 'visible'}`}>
         <li>
           <a href='/'>HOME</a>
         </li>
@@ -27,4 +44,4 @@ const Nav = () => {
   );
 };
 
-export default Nav;
+export default Navbar;
