@@ -20,9 +20,9 @@ const BookingForm = props => {
       <form onSubmit={handleSubmit}>
         <fieldset>
           <div>
-            <label htmlFor='book-date'>Choose Date</label>
+            <label htmlFor='res-date'>Choose Date</label>
             <input
-              id='book-date'
+              id='res-date'
               value={date}
               type='date'
               onChange={event => {
@@ -33,9 +33,9 @@ const BookingForm = props => {
           </div>
 
           <div>
-            <label htmlFor='book-time'>Choose Time</label>
+            <label htmlFor='res-time'>Choose Time</label>
             <select
-              id='book-time'
+              id='res-time'
               value={time}
               onChange={e => setTime(e.target.value)}
             >
@@ -47,20 +47,22 @@ const BookingForm = props => {
           </div>
 
           <div>
-            <label htmlFor='book-guests'>Number of Guests</label>
+            <label htmlFor='guests'>Number of garlicuests</label>
             <input
-              id='book-guests'
+              id='guests'
               type='number'
               min='1'
+              max='10'
+              placeholder='1'
               value={guests}
               onChange={e => setGuests(e.target.value)}
             />
           </div>
 
           <div>
-            <label htmlFor='book-occasion'>Occasion</label>
+            <label htmlFor='occasion'>Occasion</label>
             <select
-              id='book-occasion'
+              id='occasion'
               key={occasion}
               value={occasion}
               onChange={e => setOccasion(e.target.value)}

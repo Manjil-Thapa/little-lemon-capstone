@@ -4,21 +4,21 @@ const Header = () => {
   return (
     <header className='header'>
       <section>
-        {/* banner */}
-        <div className='banner'>
+        <div className='hero'>
           <h2>Little Lemon</h2>
           <h3>Chicago</h3>
           <p>
             We are family owned Mediterraneran restaurant, focused on traditional
             recipes served with a modern twist.
           </p>
-          <Link to='/booking'>
-            <button aria-label='On Click'>Reserve Table</button>
-          </Link>
+
+          <button aria-label='On Click'>
+            <Link to='/booking'>Reserve Table</Link>
+          </button>
         </div>
 
-        <div className='banner-img'>
-          <img src='hero-img.jpg' alt='' />
+        <div className='hero-img-container'>
+          <img className='hero-img' src='hero-img.jpg' alt='' />
         </div>
       </section>
     </header>

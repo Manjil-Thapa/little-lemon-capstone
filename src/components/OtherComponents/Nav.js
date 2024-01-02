@@ -12,14 +12,10 @@ const Navbar = () => {
         <img src='Logo.svg' alt='logo' />
       </a>
 
-      {/* mobile */}
       <div className='menu-icon' onClick={toggleMenu}>
-        <div className='bar'></div>
-        <div className='bar'></div>
-        <div className='bar'></div>
+        <img src='hamburger-menu.svg' alt='burger button' />
       </div>
 
-      {/* nav items */}
       <ul className={`nav-links ${menuOpen && 'visible'}`}>
         <li>
           <a href='/'>HOME</a>

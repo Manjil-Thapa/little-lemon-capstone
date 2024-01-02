@@ -1,8 +1,8 @@
 const Testimonials = () => {
   return (
-    <section className='grid-testimonials'>
+    <section className='testimonials'>
       <h2>Testimonials</h2>
-      <div>
+      <div className='testimonials-container'>
         <article>
           <div>
             <img src='avatar-placeholder.jpg' alt='placeholder' />
