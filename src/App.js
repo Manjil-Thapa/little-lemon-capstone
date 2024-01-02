@@ -7,6 +7,7 @@ import Main from './components/OtherComponents/Main';
 import Menu from './components/OtherComponents/Menu';
 import Footer from './components/OtherComponents/Footer';
 import About from './components/OtherComponents/About';
+import Testimonials from './components/OtherComponents/Testimonials';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Main />
         <Menu />
         <About />
+        <Testimonials />
       </AppContainer>
       <Footer />
     </BrowserRouter>
