@@ -499,6 +499,11 @@ button:hover a {
   padding-bottom: 1rem;
 }
 
+.menu-header h2 {
+  letter-spacing: 1px;
+  color: #495e57;
+}
+
 .menu-header button {
   font-size: 1.4rem;
   padding: 0.7rem 1.4rem;
@@ -507,7 +512,7 @@ button:hover a {
 .menu-cards {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  gap: 7rem;
+  gap: 4rem 7rem;
   width: 70dvw;
   margin: 0 auto;
 }
@@ -577,7 +582,7 @@ button:hover a {
 .testimonials-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 7rem;
+  gap: 4rem 7rem;
   width: 70dvw;
   margin: 0 auto;
   color: #333;
@@ -602,4 +607,42 @@ button:hover a {
 }
 .testimonials-content h3 {
   font-size: 22px;
+}
+
+/* about */
+
+.about {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 3rem;
+  width: 70dvw;
+  margin: 0 auto;
+}
+
+.about-left {
+  padding-right: 3rem;
+}
+
+.about-left h2,
+.about-left h3 {
+  color: #495e57;
+  font-size: 3.25rem;
+}
+
+.about-left h3 {
+  font-size: 2rem;
+}
+
+.about-left p {
+}
+
+.about-right {
+  margin: 0 auto;
+  position: relative;
+}
+
+.about-right img:nth-child(2) {
+  position: absolute;
+  top: -15%;
+  right: -55%;
 }
