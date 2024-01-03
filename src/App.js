@@ -16,8 +16,8 @@ function App() {
       <AppContainer>
         <Main />
         <Menu />
-        <About />
         <Testimonials />
+        <About />
       </AppContainer>
       <Footer />
     </BrowserRouter>

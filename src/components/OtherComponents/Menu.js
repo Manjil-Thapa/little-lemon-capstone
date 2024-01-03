@@ -52,7 +52,7 @@ const Menu = () => {
     <div className='menu-container'>
       <div className='menu-header'>
         <h2>This week's specials!</h2>
-        <button>Online Menu</button>
+        <button>View Full Menu</button>
       </div>
 
       <div className='menu-cards'>
