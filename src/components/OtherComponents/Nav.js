@@ -32,7 +32,7 @@ const Navbar = () => {
         <li>
           <a href='/'>ORDER ONLINE</a>
         </li>
-        <li>
+        <li className='nav-link-login'>
           <a href='/'>LOGIN</a>
         </li>
       </ul>

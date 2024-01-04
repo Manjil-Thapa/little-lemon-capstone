@@ -12,7 +12,7 @@ const Header = () => {
             recipes served with a modern twist.
           </p>
 
-          <button aria-label='On Click'>
+          <button aria-label='On Click' className='hero-btn'>
             <Link to='/booking'>Reserve Table</Link>
           </button>
         </div>

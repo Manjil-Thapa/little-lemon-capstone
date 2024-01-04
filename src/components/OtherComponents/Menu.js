@@ -49,30 +49,32 @@ const Menu = () => {
   };
 
   return (
-    <div className='menu-container'>
-      <div className='menu-header'>
-        <h2>This week's specials!</h2>
-        <button>View Full Menu</button>
-      </div>
+    <section className='menu-section'>
+      <div className='menu-container'>
+        <div className='menu-header'>
+          <h2>This week's specials!</h2>
+          <button>View Full Menu</button>
+        </div>
 
-      <div className='menu-cards'>
-        {recipes.map(recipe => (
-          <div key={recipe.id} className='menu-items'>
-            <img src={recipe.image} alt={recipe.title} />
-            <div className='menu-content'>
-              <div className='menu-title'>
-                <h5>{recipe.title}</h5>
-                <p>{recipe.price}</p>
+        <div className='menu-cards'>
+          {recipes.map(recipe => (
+            <div key={recipe.id} className='menu-items'>
+              <img src={recipe.image} alt={recipe.title} />
+              <div className='menu-content'>
+                <div className='menu-title'>
+                  <h5>{recipe.title}</h5>
+                  <p>{recipe.price}</p>
+                </div>
+                <p>{recipe.description}</p>
+                <button className='orderbtn' onClick={() => handleOrder(recipe.id)}>
+                  Order Now
+                </button>
               </div>
-              <p>{recipe.description}</p>
-              <button className='orderbtn' onClick={() => handleOrder(recipe.id)}>
-                Order Now
-              </button>
             </div>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
-    </div>
+    </section>
   );
 };
 

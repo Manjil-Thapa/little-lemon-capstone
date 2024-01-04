@@ -48,7 +48,7 @@ const Main = () => {
   }
 
   return (
-    <main className='main-grid'>
+    <main className='main'>
       <Routes>
         <Route path='/' element={<Header />} />
         <Route
