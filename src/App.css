@@ -20,13 +20,12 @@ ul {
   padding: 0;
 }
 
-img {
+/* img {
   width: 250px;
-}
+} */
 a {
   text-decoration: none;
   color: #333;
-  transition: all 0.2 ease-in-out;
 }
 li {
   list-style-type: none;
@@ -109,7 +108,7 @@ button:hover a {
 }
 
 .header > section {
-  width: 60dvw;
+  width: 60vw;
   height: 100%;
   margin: 0 auto;
   display: flex;
@@ -126,11 +125,11 @@ button:hover a {
   display: flex;
   flex-direction: column;
   opacity: 0;
-  animation: slidein 0.5s forwards;
+  animation: slideleft 0.5s forwards;
 }
 
 .hero h2 {
-  font-size: 4rem;
+  font-size: 5rem;
 }
 .hero h3 {
   font-size: 2.5rem;
@@ -152,7 +151,7 @@ button:hover a {
 .hero-btn:hover {
   border: 2px solid #f4ce14;
 }
-.hero-btn a:hover {
+.hero-btn:hover a {
   color: #f4ce14;
 }
 
@@ -162,6 +161,8 @@ button:hover a {
   align-items: center;
   height: 100%;
   width: 30%;
+  opacity: 0;
+  animation: slideright 0.5s forwards;
 }
 .hero-img {
   border-radius: 1rem;
@@ -184,7 +185,7 @@ button:hover a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 60dvw;
+  width: 60vw;
   margin: 0 auto;
   font-size: 1.5rem;
   padding-bottom: 2rem;
@@ -205,7 +206,7 @@ button:hover a {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 4rem 7rem;
-  width: 60dvw;
+  width: 60vw;
   margin: 0 auto;
 }
 
@@ -245,10 +246,6 @@ button:hover a {
   box-sizing: border-box;
 }
 
-/* .menu-content p {
-  line-height: 1.5;
-} */
-
 .menu-content button {
   font-size: 1rem;
   align-self: flex-start;
@@ -275,7 +272,7 @@ button:hover a {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 4rem 7rem;
-  width: 70dvw;
+  width: 70vw;
   margin: 0 auto;
   color: #333;
 }
@@ -288,6 +285,9 @@ button:hover a {
   border-radius: 1rem;
   box-sizing: border-box;
   padding: 1rem;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1s, transform 1s;
 }
 
 .testimonials-content img {
@@ -301,6 +301,11 @@ button:hover a {
   font-size: 22px;
 }
 
+.testimonials-content.animate {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 /* about */
 .about-section {
   padding: 2rem;
@@ -312,14 +317,17 @@ button:hover a {
 
 .about {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(auto, 576px));
   padding: 6rem;
-  width: 60dvw;
+  width: 60vw;
   margin: 0 auto;
 }
 
 .about-left {
   padding-right: 3rem;
+  opacity: 0;
+  transform: scale(0.9);
+  transition: opacity 1s, transform 1s;
 }
 
 .about-left h2,
@@ -332,24 +340,40 @@ button:hover a {
   font-size: 2rem;
 }
 
+.about-left.animate {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.about-right img:nth-child(1) {
+  margin-left: 10%;
+  object-position: 40%;
+}
+
 .about-right {
   margin: 0 auto;
   position: relative;
 }
 
 .about-right img {
+  box-sizing: border-box;
+  max-width: 70%;
+  height: 100%;
   border: 5px solid white;
   position: relative;
+  object-fit: cover;
 }
 
 .about-right img:nth-child(2) {
   position: absolute;
-  top: -15%;
-  right: -55%;
+  top: -30%;
+  right: -10%;
+  object-position: 90%;
+  transition: all 0.3s ease-in;
 }
 
-.about-right img:nth-child(1):hover {
-  z-index: 1;
+.about-right img:nth-child(1):hover + img:nth-child(2) {
+  opacity: 0;
 }
 
 /* footer */
@@ -366,7 +390,7 @@ footer li {
 }
 
 .footer > section {
-  width: 60dvw;
+  width: 60vw;
   margin: 0 auto;
   padding: 3rem;
   display: flex;
@@ -385,10 +409,9 @@ footer li {
   padding: 2rem;
 }
 
-@keyframes slidein {
+@keyframes slideleft {
   from {
-    opacity: 0;
-    transform: translateX(-50%);
+    transform: translateX(-30%);
   }
   to {
     opacity: 1;
@@ -396,8 +419,25 @@ footer li {
   }
 }
 
-/* main */
+@keyframes slideright {
+  from {
+    transform: translateX(50%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
 
-.main {
+/* form */
+
+.form-section {
   height: 70vh;
+}
+.form-section form,
+.form-section fieldset {
+  height: 100%;
+}
+.form-section fieldset {
+  background-color: #495e57;
 }

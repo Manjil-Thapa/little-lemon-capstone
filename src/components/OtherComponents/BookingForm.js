@@ -16,7 +16,7 @@ const BookingForm = props => {
     props.submitForm(event);
   };
   return (
-    <section>
+    <section className='form-section'>
       <form onSubmit={handleSubmit}>
         <fieldset>
           <div>

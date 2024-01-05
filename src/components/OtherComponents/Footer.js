@@ -47,7 +47,7 @@ const Footer = () => {
     <footer className='footer'>
       <section>
         <div className='footer-info'>
-          <img src='restaurant.jpg' alt='restaurant site' />
+          <img src='footer-logo.png' alt='footer logo' />
         </div>
         <div className='footer-links'>
           <div>

@@ -1,10 +1,31 @@
+import { useEffect } from 'react';
+
 const About = () => {
+  useEffect(() => {
+    const aboutLeft = document.querySelector('.about-left');
+
+    const observer = new IntersectionObserver(
+      entries => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('animate');
+          }
+        });
+      },
+      { threshold: 0.5 }
+    );
+
+    observer.observe(aboutLeft);
+
+    return () => observer.disconnect();
+  }, []);
+
   return (
     <section className='about-section'>
       <div className='about-bg'>
         <div className='about'>
           <div className='about-left'>
-            <h2 id='about'>About Little Lemon</h2>
+            <h2>About Little Lemon</h2>
             <h3>Chicago</h3>
             <p>
               Little Lemon is a charming neighborhood bistro that serves simple food
@@ -20,8 +41,8 @@ const About = () => {
             <button>Read More</button>
           </div>
           <div className='about-right'>
-            <img src='hero-img.jpg' alt='placeholder' />
-            <img src='hero-img.jpg' alt='placeholder' />
+            <img src='restaurant.jpg' alt='placeholder' />
+            <img src='mario-adrian.jpg' alt='placeholder' />
           </div>
         </div>
       </div>
