@@ -13,19 +13,18 @@ const Testimonials = () => {
         });
       },
       { threshold: 0.5 }
-    ); // Adjust threshold as needed
+    );
 
     testimonialsContents.forEach(content => {
       observer.observe(content);
     });
 
-    // Cleanup observer on component unmount
     return () => {
       testimonialsContents.forEach(content => {
         observer.unobserve(content);
       });
     };
-  }, []); // Empty dependency array to run the effect only once
+  }, []);
   return (
     <section className='testimonials'>
       <h2>Customers Stories</h2>

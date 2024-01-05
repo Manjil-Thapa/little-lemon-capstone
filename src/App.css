@@ -59,7 +59,7 @@ button:hover a {
   padding: 0.5rem 20%;
   background-color: #f1f1f1;
   z-index: 100;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.4s ease-in-out;
 }
 
 .menu-icon {
@@ -124,7 +124,7 @@ button:hover a {
   display: flex;
   flex-direction: column;
   opacity: 0;
-  animation: slideleft 0.5s forwards;
+  animation: slideleft 1.5s forwards;
 }
 
 .hero h2 {
@@ -160,7 +160,7 @@ button:hover a {
   height: 100%;
   width: 30%;
   opacity: 0;
-  animation: slideright 0.5s forwards;
+  animation: slideright 1.5s forwards;
 }
 .hero-img {
   border-radius: 1rem;
