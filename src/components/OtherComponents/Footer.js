@@ -78,13 +78,13 @@ const Footer = () => {
             <h3>CONTACT</h3>
             <ul>
               <li>
-                Address: <br /> Shop 4, 961 Boulevard Rd
+                Location: <br /> Upper Level <br /> Shop 4, 961 Boulevard Rd
               </li>
               <li>
                 Phone: <br /> 07 123456 2939
               </li>
               <li>
-                Email: <br /> <a href='/'>little@lemon.com</a>
+                Email: <br /> <a href='/'>little-lemon@gmail.com</a>
               </li>
             </ul>
           </div>
@@ -106,6 +106,17 @@ const Footer = () => {
                 <a href='/' target='_blank'>
                   Twitter
                 </a>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h3>OPENING HOURS</h3>
+            <ul>
+              <li>
+                Weekdays <br /> 1PM - 9PM
+              </li>
+              <li>
+                Weekends & Holidays <br /> 2PM - 8PM
               </li>
             </ul>
           </div>
