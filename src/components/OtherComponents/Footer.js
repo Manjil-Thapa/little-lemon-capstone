@@ -122,7 +122,7 @@ const Footer = () => {
           </div>
         </div>
       </section>
-      <h4>© Copyright 2024 Manjil Thapa</h4>
+      <h4>© 2024 Manjil Thapa</h4>
     </footer>
   );
 };

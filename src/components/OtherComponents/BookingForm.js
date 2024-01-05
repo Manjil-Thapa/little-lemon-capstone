@@ -18,7 +18,7 @@ const BookingForm = props => {
   return (
     <section className='form-section'>
       <form onSubmit={handleSubmit}>
-        <fieldset>
+        <fieldset className='form-container'>
           <div>
             <label htmlFor='res-date'>Choose Date</label>
             <input

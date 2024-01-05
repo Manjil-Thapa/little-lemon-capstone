@@ -1,13 +1,36 @@
-import { useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
+  const headRef = useRef(null);
+  useEffect(() => {
+    let prevScrollPos = window.scrollY;
+
+    const handleScroll = () => {
+      const currentScrollPos = window.scrollY;
+      const headElement = headRef.current;
+      if (!headElement) {
+        return;
+      }
+      if (prevScrollPos > currentScrollPos) {
+        headElement.style.transform = 'translateY(0)';
+      } else {
+        headElement.style.transform = 'translateY(-100%)';
+      }
+      prevScrollPos = currentScrollPos;
+    };
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
 
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
   };
   return (
-    <nav className={`navbar ${menuOpen && 'open'}`}>
+    <nav className={`navbar ${menuOpen && 'open'}`} ref={headRef}>
       <a href='/' className='logo'>
         <img src='Logo.svg' alt='logo' />
       </a>

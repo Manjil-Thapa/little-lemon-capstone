@@ -48,17 +48,20 @@ button:hover a {
   color: #fff;
 }
 
+/* navbar */
+
 .navbar {
   position: sticky;
   top: 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 20%;
-  margin: 0 auto;
+  padding: 0.5rem 20%;
   background-color: #f1f1f1;
   z-index: 100;
+  transition: all 0.3s ease-in-out;
 }
+
 .menu-icon {
   display: none;
 }
@@ -452,4 +455,8 @@ footer a {
 }
 .form-section fieldset {
   background-color: #495e57;
+}
+
+.form-container label {
+  display: block;
 }
