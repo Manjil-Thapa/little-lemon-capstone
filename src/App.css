@@ -309,6 +309,11 @@ button:hover a {
   transform: translateY(0);
 }
 
+.testimonials-content img:last-child {
+  height: 20px;
+  border: unset;
+}
+
 /* about */
 .about-section {
   padding: 2rem;
@@ -540,7 +545,8 @@ textarea {
 
 /* construction */
 
-.construction {
+.construction,
+.confirm {
   display: flex;
   justify-content: center;
   align-items: center;

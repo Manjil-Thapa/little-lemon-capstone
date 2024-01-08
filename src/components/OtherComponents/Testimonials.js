@@ -35,8 +35,8 @@ const Testimonials = () => {
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur, fuga
             fugiat. Blanditiis
           </p>
-          <h3>John Hawkings</h3>
-          <h4>Rating</h4>
+          <h3>John</h3>
+          <img src='/star.png' alt='rating' />
         </article>
 
         <article className='testimonials-content'>
@@ -45,8 +45,8 @@ const Testimonials = () => {
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur, fuga
             fugiat. Blanditiis
           </p>
-          <h3>Miranda Kerr</h3>
-          <h4>Rating</h4>
+          <h3>Sam</h3>
+          <img src='/star.png' alt='rating' />
         </article>
 
         <article className='testimonials-content'>
@@ -55,8 +55,8 @@ const Testimonials = () => {
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur, fuga
             fugiat. Blanditiis
           </p>
-          <h3>Name</h3>
-          <h4>Rating</h4>
+          <h3>Martin</h3>
+          <img src='/star.png' alt='rating' />
         </article>
 
         <article className='testimonials-content'>
@@ -65,8 +65,8 @@ const Testimonials = () => {
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur, fuga
             fugiat. Blanditiis
           </p>
-          <h3>Name</h3>
-          <h4>Rating</h4>
+          <h3>William</h3>
+          <img src='/star.png' alt='rating' />
         </article>
       </div>
     </section>
