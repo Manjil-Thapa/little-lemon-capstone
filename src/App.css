@@ -281,7 +281,6 @@ button:hover a {
   flex-shrink: 0;
   background-color: #f1f1f1;
   border-radius: 1rem;
-  box-sizing: border-box;
   padding: 1rem;
   opacity: 0;
   transform: translateY(20px);
@@ -465,26 +464,88 @@ footer a {
   background-color: #495e57;
 }
 
-input {
+input,
+textarea,
+select {
+  color: #333;
+  padding: 4px;
+  border-radius: 6px;
   border: none;
+  background-color: #eeeeee;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+}
+
+textarea {
+  background-color: #eeeeee;
 }
 
 .form-container {
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  align-items: center;
   height: 100%;
-  width: 50%;
+  width: max-content;
   margin: 0 auto;
   padding: 0;
-  box-sizing: border-box;
   gap: 2em;
+  color: #fff;
+  font-family: 'Karla', sans-serif;
+  font-size: 1.4rem;
+  border: none;
 }
 
 .form-container label {
   display: block;
 }
 
-/* .form-container > div:last-child {
-  align-self: flex-end;
-} */
+.form-top {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2em;
+}
+
+.form-btm {
+  display: flex;
+  flex-direction: column;
+}
+
+.btnReceive {
+  align-self: center;
+  margin-top: 1em;
+}
+.btnReceive > input {
+  padding: 0.5em 1em;
+  background-color: #f4ce14;
+  cursor: pointer;
+  border: 2px solid transparent;
+  font-family: 'Karla', sans-serif;
+  transition: all 0.2s ease-in-out;
+}
+.btnReceive > input:hover {
+  background-color: #495e57;
+  color: #f4ce14;
+  border: 2px solid #f4ce14;
+}
+
+.form-btm textarea {
+  width: 100%;
+  padding: 0.5em;
+}
+
+/* construction */
+
+.construction {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #495e57;
+  font-size: 10rem;
+  color: #fff;
+  padding: 2rem;
+}
