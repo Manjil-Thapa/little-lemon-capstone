@@ -294,9 +294,15 @@ button:hover a {
   aspect-ratio: 1/1;
   border-radius: 50%;
   object-fit: cover;
+  margin: auto;
 }
 .testimonials-content h3 {
   font-size: 22px;
+  text-align: center;
+  border-top: 1px solid #495e57;
+}
+.testimonials-container h4 {
+  text-align: center;
 }
 
 .testimonials-content.animate {
@@ -384,6 +390,7 @@ button:hover a {
 
 .footer img {
   height: 200px;
+  margin-right: 6em;
 }
 
 .footer h3,
@@ -413,10 +420,14 @@ footer a {
 }
 
 .footer-links {
-  display: flex;
+  /* display: flex;
   justify-content: flex-end;
   gap: 8rem;
-  width: 100%;
+  width: 100%; */
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 4em;
+  margin: auto;
 }
 
 .footer > h4 {
@@ -449,14 +460,31 @@ footer a {
 .form-section {
   height: 70vh;
 }
-.form-section form,
-.form-section fieldset {
+.form-section form {
   height: 100%;
-}
-.form-section fieldset {
   background-color: #495e57;
+}
+
+input {
+  border: none;
+}
+
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 50%;
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+  gap: 2em;
 }
 
 .form-container label {
   display: block;
 }
+
+/* .form-container > div:last-child {
+  align-self: flex-end;
+} */
