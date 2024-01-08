@@ -45,7 +45,7 @@ const Testimonials = () => {
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur, fuga
             fugiat. Blanditiis
           </p>
-          <h3>Name</h3>
+          <h3>Miranda Kerr</h3>
           <h4>Rating</h4>
         </article>
 

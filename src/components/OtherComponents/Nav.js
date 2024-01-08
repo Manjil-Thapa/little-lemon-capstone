@@ -3,6 +3,7 @@ import { useEffect, useRef, useState } from 'react';
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const headRef = useRef(null);
+
   useEffect(() => {
     let prevScrollPos = window.scrollY;
 
@@ -29,6 +30,7 @@ const Navbar = () => {
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
   };
+
   return (
     <nav className={`navbar ${menuOpen && 'open'}`} ref={headRef}>
       <a href='/' className='logo'>
