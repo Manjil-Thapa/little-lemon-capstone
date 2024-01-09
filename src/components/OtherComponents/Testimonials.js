@@ -30,7 +30,7 @@ const Testimonials = () => {
       <h2>Customers Stories</h2>
       <div className='testimonials-container'>
         <article className='testimonials-content'>
-          <img src='avatar-placeholder.jpg' alt='placeholder' />
+          <img src='avatar.jpg' alt='placeholder' />
           <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur, fuga
             fugiat. Blanditiis
@@ -40,7 +40,7 @@ const Testimonials = () => {
         </article>
 
         <article className='testimonials-content'>
-          <img src='avatar-placeholder.jpg' alt='placeholder' />
+          <img src='avatar.jpg' alt='placeholder' />
           <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur, fuga
             fugiat. Blanditiis
@@ -50,7 +50,7 @@ const Testimonials = () => {
         </article>
 
         <article className='testimonials-content'>
-          <img src='avatar-placeholder.jpg' alt='placeholder' />
+          <img src='avatar.jpg' alt='placeholder' />
           <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur, fuga
             fugiat. Blanditiis
@@ -60,7 +60,7 @@ const Testimonials = () => {
         </article>
 
         <article className='testimonials-content'>
-          <img src='avatar-placeholder.jpg' alt='placeholder' />
+          <img src='avatar.jpg' alt='placeholder' />
           <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur, fuga
             fugiat. Blanditiis
