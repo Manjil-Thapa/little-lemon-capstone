@@ -1,24 +1,57 @@
-import { BrowserRouter } from 'react-router-dom';
+// import { Route, Routes } from 'react-router-dom';
+// import AboutPage from './components/pages/AboutPage';
+// import MenuPage from './components/pages/MenuPage';
+// import Layout from './components/Layout';
+// import LoginPage from './components/pages/LoginPage';
+// import Routing from './Routing';
+import Navbar from './components/sections/Nav';
+import Main from './components/pages/Main';
+import Footer from './components/sections/Footer';
 import './App.css';
-
-import Navbar from './components/OtherComponents/Nav';
-import Main from './components/OtherComponents/Main';
-import Menu from './components/OtherComponents/Menu';
-import Footer from './components/OtherComponents/Footer';
-import About from './components/OtherComponents/About';
-import Testimonials from './components/OtherComponents/Testimonials';
 
 function App() {
   return (
-    <BrowserRouter>
+    <>
       <Navbar />
       <Main />
-      <Menu />
-      <Testimonials />
-      <About />
       <Footer />
-    </BrowserRouter>
+    </>
   );
 }
 
 export default App;
+
+// <Routes>
+//   <Route
+//     path='/*'
+//     element={
+//       <Layout>
+//         <Main />
+//       </Layout>
+//     }
+//   />
+//   <Route
+//     path='/about/*'
+//     element={
+//       <Layout>
+//         <AboutPage />
+//       </Layout>
+//     }
+//   />
+//   <Route
+//     path='/menu/*'
+//     element={
+//       <Layout>
+//         <MenuPage />
+//       </Layout>
+//     }
+//   />
+//   <Route
+//     path='/login'
+//     element={
+//       <Layout>
+//         <LoginPage />
+//       </Layout>
+//     }
+//   />
+// </Routes>
