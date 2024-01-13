@@ -95,7 +95,7 @@ button:hover a {
   color: #fff;
 }
 
-/* header */
+/* hero */
 
 .header {
   background-color: #495e57;
@@ -146,10 +146,12 @@ button:hover a {
   font-size: 2rem;
 }
 
-.hero-btn:hover {
+.hero-btn:hover,
+.confirm button:hover {
   border: 2px solid #f4ce14;
 }
-.hero-btn:hover a {
+.hero-btn:hover a,
+.confirm button a:hover {
   color: #f4ce14;
 }
 
@@ -554,4 +556,26 @@ textarea {
   font-size: 10rem;
   color: #fff;
   padding: 2rem;
+}
+
+/* confirmation */
+
+.confirm {
+  flex-direction: column;
+  justify-content: center;
+  height: 70vh;
+}
+.confirm h2 {
+  font-size: 5rem;
+}
+
+.confirm p {
+  font-size: 2rem;
+  padding: 0 25%;
+  text-align: center;
+}
+
+.confirm span {
+  color: #f4ce14;
+  font-size: 2.5rem;
 }
