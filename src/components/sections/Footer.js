@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 const Footer = () => {
   return (
     <footer className='footer'>
@@ -10,22 +12,22 @@ const Footer = () => {
             <h3>SITEMAP</h3>
             <ul>
               <li>
-                <a href='/'>Home</a>
+                <Link to='/'>Home</Link>
               </li>
               <li>
-                <a href='/'>About</a>
+                <Link to='/about'>About</Link>
               </li>
               <li>
-                <a href='/'>Menu</a>
+                <Link to='/menu'>Menu</Link>
               </li>
               <li>
-                <a href='/'>Reservations</a>
+                <Link to='/booking'>Reservation</Link>
               </li>
               <li>
-                <a href='/'>Order Online</a>
+                <Link to='/order'>Order Online</Link>
               </li>
               <li>
-                <a href='/'>Login</a>
+                <Link to='/login'>Login</Link>
               </li>
             </ul>
           </div>
@@ -40,7 +42,8 @@ const Footer = () => {
                 Phone: <br /> 07 123456 2939
               </li>
               <li>
-                Email: <br /> <a href='/'>little-lemon@gmail.com</a>
+                Email: <br />
+                <a href='mailto: little-lemon@gmail.com'>little-lemon@gmail.com</a>
               </li>
             </ul>
           </div>
@@ -49,17 +52,29 @@ const Footer = () => {
             <h3>SOCIAL</h3>
             <ul>
               <li>
-                <a href='/' target='_blank'>
+                <a
+                  href='https://facebook.com'
+                  target='_blank'
+                  rel='noopener noreferrer'
+                >
                   Facebook
                 </a>
               </li>
               <li>
-                <a href='/' target='_blank'>
+                <a
+                  href='https://www.instagram.com/'
+                  target='_blank'
+                  rel='noopener noreferrer'
+                >
                   Instagram
                 </a>
               </li>
               <li>
-                <a href='/' target='_blank'>
+                <a
+                  href='https://twitter.com/'
+                  target='_blank'
+                  rel='noopener noreferrer'
+                >
                   Twitter
                 </a>
               </li>

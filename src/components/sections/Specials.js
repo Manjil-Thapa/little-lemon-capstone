@@ -29,23 +29,29 @@ const recipes = [
 
 const Specials = () => {
   const handleOrder = id => {
-    Swal.fire({
-      title: 'Are you sure?',
-      text: "You won't be able to revert this!",
-      icon: 'warning',
-      showCancelButton: true,
-      confirmButtonColor: '#3085d6',
-      cancelButtonColor: '#d33',
-      confirmButtonText: 'Confirm order',
-    }).then(result => {
-      if (result.isConfirmed) {
-        Swal.fire({
-          title: 'Order success',
-          text: 'Your order has been added',
-          icon: 'success',
-        });
-      }
-    });
+    const selectedRecipe = recipes.find(recipe => recipe.id === id);
+    if (selectedRecipe) {
+      const { title } = selectedRecipe;
+      Swal.fire({
+        title: 'Are you sure?',
+        text: `You are about to order ${title}.`,
+        icon: 'warning',
+        showCancelButton: true,
+        confirmButtonColor: '#3085d6',
+        cancelButtonColor: '#d33',
+        confirmButtonText: 'Confirm order',
+      }).then(result => {
+        if (result.isConfirmed) {
+          Swal.fire({
+            title: 'Order success',
+            text: `Your order for ${title} has been added to your cart.`,
+            icon: 'success',
+          });
+        }
+      });
+    } else {
+      console.log(`Recipe with id ${id} not found.`);
+    }
   };
 
   return (
@@ -68,9 +74,7 @@ const Specials = () => {
                 </div>
 
                 <p>{recipe.description}</p>
-                <button className='orderbtn' onClick={() => handleOrder(recipe.id)}>
-                  Order Now
-                </button>
+                <button onClick={() => handleOrder(recipe.id)}>Order Now</button>
               </div>
             </div>
           ))}

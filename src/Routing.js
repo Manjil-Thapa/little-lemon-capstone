@@ -25,10 +25,6 @@ const Routing = ({ availableTimes, updateTimes, formSubmit }) => {
           </>
         }
       />
-      <Route path='/about/*' element={<AboutPage />} />
-      <Route path='/menu/*' element={<MenuPage />} />
-      <Route path='/order' element={<OnlineOrder />} />
-      <Route path='/login' element={<LoginPage />} />
       <Route
         path='/booking'
         element={
@@ -44,7 +40,7 @@ const Routing = ({ availableTimes, updateTimes, formSubmit }) => {
         }
       />
       <Route
-        path='/confirmed'
+        path='/booking-success'
         element={
           <>
             <BookingLayout>
@@ -53,6 +49,10 @@ const Routing = ({ availableTimes, updateTimes, formSubmit }) => {
           </>
         }
       />
+      <Route path='/about/' element={<AboutPage />} />
+      <Route path='/menu/' element={<MenuPage />} />
+      <Route path='/order' element={<OnlineOrder />} />
+      <Route path='/login' element={<LoginPage />} />
     </Routes>
   );
 };

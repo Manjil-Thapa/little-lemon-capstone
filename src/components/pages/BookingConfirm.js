@@ -9,7 +9,7 @@ const BookingConfirm = () => {
         you a delightful dining experience.
       </p>
       <button>
-        <Link to='/'>RETURN TO MENU</Link>
+        <Link to='/'>RETURN HOME</Link>
       </button>
     </div>
   );
