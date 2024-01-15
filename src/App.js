@@ -20,38 +20,3 @@ function App() {
 }
 
 export default App;
-
-// <Routes>
-//   <Route
-//     path='/*'
-//     element={
-//       <Layout>
-//         <Main />
-//       </Layout>
-//     }
-//   />
-//   <Route
-//     path='/about/*'
-//     element={
-//       <Layout>
-//         <AboutPage />
-//       </Layout>
-//     }
-//   />
-//   <Route
-//     path='/menu/*'
-//     element={
-//       <Layout>
-//         <MenuPage />
-//       </Layout>
-//     }
-//   />
-//   <Route
-//     path='/login'
-//     element={
-//       <Layout>
-//         <LoginPage />
-//       </Layout>
-//     }
-//   />
-// </Routes>

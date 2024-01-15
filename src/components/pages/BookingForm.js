@@ -45,18 +45,18 @@ const BookingForm = ({ availableTimes, updateTimes, formSubmit }) => {
         <fieldset className='form-container'>
           <div className='form-top'>
             <div>
-              <label htmlFor='firstName'>Name*</label>
+              <label htmlFor='firstName'>Name</label>
               <input
                 id='firstName'
                 type='text'
                 name='firstName'
-                value={formData.firstName}
+                value={formData.name}
                 onChange={handleInputChange}
                 minLength={2}
                 required
               />
 
-              <label htmlFor='email'>Email*</label>
+              <label htmlFor='email'>Email</label>
               <input
                 type='email'
                 id='email'
@@ -66,7 +66,7 @@ const BookingForm = ({ availableTimes, updateTimes, formSubmit }) => {
                 required
               />
 
-              <label htmlFor='guests'>Number of guests*</label>
+              <label htmlFor='guests'>Number of guests</label>
               <input
                 type='number'
                 placeholder='1'
@@ -81,7 +81,7 @@ const BookingForm = ({ availableTimes, updateTimes, formSubmit }) => {
             </div>
 
             <div>
-              <label htmlFor='date'>Choose date*</label>
+              <label htmlFor='date'>Choose date</label>
               <input
                 type='date'
                 id='date'
@@ -91,7 +91,7 @@ const BookingForm = ({ availableTimes, updateTimes, formSubmit }) => {
                 required
               />
 
-              <label htmlFor='time'>Choose time*</label>
+              <label htmlFor='time'>Choose time</label>
               <select
                 id='time'
                 name='time'
