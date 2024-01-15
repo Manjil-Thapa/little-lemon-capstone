@@ -49,6 +49,9 @@ button:hover a {
 }
 
 /* navbar */
+.nav-bg {
+  background-color: #fff;
+}
 
 .navbar {
   position: sticky;
@@ -56,13 +59,20 @@ button:hover a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0.5rem 20%;
-  background-color: #f1f1f1;
+  /* padding: 0.5rem 20%; */
+  box-sizing: border-box;
+  padding: 0.5em 1em;
+  max-width: 1160px;
+  margin: auto;
   z-index: 100;
   transition: all 0.4s ease-in-out;
 }
 
-.menu-icon {
+.logo {
+  padding-right: 2rem;
+}
+
+.burger-icon {
   display: none;
 }
 
@@ -99,51 +109,44 @@ button:hover a {
 
 .header {
   background-color: #495e57;
-  height: 50vh;
-}
-
-.header h2 {
-  color: #f4ce14;
-}
-
-.header > section {
-  width: 60vw;
-  height: 100%;
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  color: #fff;
-  box-sizing: border-box;
-  padding: 2rem 0;
 }
 
 .hero {
-  width: 50%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  opacity: 0;
   animation: slideleft 1.5s forwards;
 }
-
 .hero h2 {
   font-size: 5rem;
+  color: #f4ce14;
 }
 .hero h3 {
   font-size: 2.5rem;
+  color: #fff;
 }
 
 .hero p {
   font-size: 1.5rem;
-  width: fit-content;
-  padding-right: 2rem;
+  color: #fff;
+  padding-right: 6rem;
 }
 
-.hero-btn {
-  align-self: flex-start;
-  margin-top: auto;
-  font-size: 2rem;
+.header > section {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  max-width: 1160px;
+  margin: auto;
+  padding: 2em 1em;
+  box-sizing: border-box;
+}
+
+.hero-img-container {
+  place-self: center end;
+  animation: slideright 1.5s forwards;
+}
+.hero-img-container img {
+  border-radius: 1rem;
+  object-fit: cover;
+  max-height: 350px;
+  aspect-ratio: 1/1;
 }
 
 .hero-btn:hover,
@@ -153,22 +156,6 @@ button:hover a {
 .hero-btn:hover a,
 .confirm button a:hover {
   color: #f4ce14;
-}
-
-.hero-img-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-  width: 30%;
-  opacity: 0;
-  animation: slideright 1.5s forwards;
-}
-.hero-img {
-  border-radius: 1rem;
-  aspect-ratio: 1/1;
-  width: 100%;
-  object-fit: cover;
 }
 
 /* menu */
@@ -185,10 +172,12 @@ button:hover a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 60vw;
+  /* width: 60vw; */
+  padding: 0 1em 2em 1em;
+  box-sizing: border-box;
+  max-width: 1160px;
   margin: 0 auto;
   font-size: 1.5rem;
-  padding-bottom: 2rem;
 }
 
 .menu-header h2 {
@@ -206,7 +195,8 @@ button:hover a {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 4rem 7rem;
-  width: 60vw;
+  /* width: 60vw; */
+  max-width: 1140px;
   margin: 0 auto;
 }
 
@@ -255,7 +245,7 @@ button:hover a {
 
 .testimonials {
   background-color: #495e57;
-  min-height: 40dvh;
+  min-height: 40vh;
   color: #fff;
   padding: 2rem 0 4.5rem 0;
 }
@@ -272,9 +262,11 @@ button:hover a {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 3rem;
-  width: 60vw;
+  /* width: 60vw; */
+  max-width: 1160px;
   margin: 0 auto;
   color: #333;
+  padding: 1.2em;
 }
 
 .testimonials-content {
@@ -324,22 +316,24 @@ button:hover a {
 .about-bg {
   background-color: #eeeeee;
 }
-
 .about {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(auto, 576px));
-  padding: 6rem;
-  width: 60vw;
-  margin: 0 auto;
+  grid-template-columns: repeat(2, 1fr);
+  max-width: 1160px;
+  margin: auto;
+  padding: 2em 1em;
+  box-sizing: border-box;
 }
 
 .about-left {
-  padding-right: 3rem;
   opacity: 0;
   transform: scale(0.9);
   transition: opacity 1s, transform 1s;
 }
 
+.about-left p {
+  padding-right: 4em;
+}
 .about-left h2,
 .about-left h3 {
   color: #495e57;
@@ -355,29 +349,28 @@ button:hover a {
   transform: scale(1);
 }
 
-.about-right img:nth-child(1) {
-  margin-left: 10%;
-  object-position: 40%;
-}
-
 .about-right {
-  margin: 0 auto;
+  place-self: center end;
+  height: 100%;
   position: relative;
 }
-
 .about-right img {
-  box-sizing: border-box;
-  max-width: 70%;
+  max-width: 450px;
+  max-height: 480px;
   height: 100%;
-  border: 5px solid white;
-  position: relative;
+  box-sizing: border-box;
+  border: 5px solid #fff;
   object-fit: cover;
+}
+
+.about-right img:first-child {
+  object-position: 40%;
 }
 
 .about-right img:nth-child(2) {
   position: absolute;
-  top: -30%;
-  right: -10%;
+  top: -20%;
+  right: -25%;
   object-position: 90%;
   transition: all 0.3s ease-in;
 }
@@ -397,6 +390,7 @@ button:hover a {
 .footer img {
   height: 200px;
   margin-right: 6em;
+  display: flex;
 }
 
 .footer h3,
@@ -419,9 +413,10 @@ footer a {
 }
 
 .footer > section {
-  width: 60vw;
+  /* width: 60vw; */
+  padding: 3em 1em;
+  max-width: 1160px;
   margin: 0 auto;
-  padding: 3rem;
   display: flex;
 }
 
@@ -431,34 +426,16 @@ footer a {
   gap: 8rem;
   width: 100%; */
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  /* grid-template-columns: repeat(4, 1fr); */
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
   gap: 4em;
   margin: auto;
+  width: 100%;
 }
 
 .footer > h4 {
   text-align: center;
   padding: 2rem;
-}
-
-@keyframes slideleft {
-  from {
-    transform: translateX(-30%);
-  }
-  to {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-
-@keyframes slideright {
-  from {
-    transform: translateX(50%);
-  }
-  to {
-    opacity: 1;
-    transform: translateX(0);
-  }
 }
 
 /* form */
@@ -481,6 +458,7 @@ select {
   background-color: #eeeeee;
   width: 100%;
   box-sizing: border-box;
+  margin-bottom: 0.7rem;
 }
 
 input:focus,
@@ -500,10 +478,9 @@ textarea {
   width: max-content;
   margin: 0 auto;
   padding: 0;
-  gap: 2em;
   color: #fff;
   font-family: 'Karla', sans-serif;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   border: none;
 }
 
@@ -578,4 +555,74 @@ textarea {
 .confirm span {
   color: #f4ce14;
   font-size: 2.5rem;
+}
+
+@media screen and (max-width: 790px) {
+  .footer img,
+  .about-right {
+    display: none;
+  }
+  .about {
+    text-align: center;
+    display: block;
+  }
+  .about-left p {
+    padding: 0 4em;
+  }
+
+  .testimonials {
+    padding: 2rem;
+  }
+  .menu-header h2 {
+    font-size: 2rem;
+  }
+  .menu-cards {
+    gap: 2rem;
+  }
+  .hero-img-container {
+    display: none;
+  }
+  .hero {
+    width: auto;
+    text-align: center;
+  }
+  .hero p {
+    padding: 0 8rem;
+  }
+  .hero-btn {
+    align-self: center;
+  }
+  .header > section {
+    display: block;
+  }
+}
+@media screen and (max-width: 660px) {
+  .nav-links {
+    display: none;
+  }
+  .burger-icon {
+    display: block;
+  }
+  .hero p {
+    padding: 0 6rem;
+  }
+}
+@keyframes slideleft {
+  from {
+    transform: translateX(-30%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideright {
+  from {
+    transform: translateX(50%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
