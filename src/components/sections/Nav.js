@@ -32,34 +32,52 @@ const Navbar = () => {
     setMenuOpen(!menuOpen);
   };
 
-  return (
-    <nav className={`navbar ${menuOpen && 'open'}`} ref={headRef}>
-      <Link to='/' className='logo'>
-        <img src='Logo.svg' alt='logo' />
-      </Link>
+  const closeMenu = () => {
+    setMenuOpen(false);
+  };
 
-      <div className='menu-icon' onClick={toggleMenu}>
-        <img src='hamburger-menu.svg' alt='burger button' />
+  return (
+    <nav className={`navbar ${menuOpen ? 'open' : ''}`} ref={headRef}>
+      <div className='test'>
+        <Link to='/' className='logo'>
+          <img src='Logo.svg' alt='logo' />
+        </Link>
+
+        <div className='burger-icon' onClick={toggleMenu}>
+          <img src='hamburger-menu.svg' alt='burger button' />
+        </div>
       </div>
 
-      <ul className={`nav-links ${menuOpen && 'visible'}`}>
+      <ul className={`nav-links ${menuOpen ? 'mobile' : ''}`}>
         <li>
-          <Link to='/'>HOME</Link>
+          <Link to='/' onClick={closeMenu}>
+            HOME
+          </Link>
         </li>
         <li>
-          <Link to='/about'>ABOUT</Link>
+          <Link to='/about' onClick={closeMenu}>
+            ABOUT
+          </Link>
         </li>
         <li>
-          <Link to='/menu'>MENU</Link>
+          <Link to='/menu' onClick={closeMenu}>
+            MENU
+          </Link>
         </li>
         <li>
-          <Link to='/booking'>RESERVATION</Link>
+          <Link to='/booking' onClick={closeMenu}>
+            RESERVATION
+          </Link>
         </li>
         <li>
-          <Link to='/order'>ONLINE ORDER</Link>
+          <Link to='/order' onClick={closeMenu}>
+            ONLINE ORDER
+          </Link>
         </li>
         <li className='nav-link-login'>
-          <Link to='/login'>Login</Link>
+          <Link to='/login' onClick={closeMenu}>
+            Login
+          </Link>
         </li>
       </ul>
     </nav>
