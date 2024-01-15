@@ -41,7 +41,7 @@ const BookingForm = ({ availableTimes, updateTimes, formSubmit }) => {
 
   return (
     <section className='form-section'>
-      <form onSubmit={handleSubmit}>
+      <form data-testid='bookingForm' onSubmit={handleSubmit}>
         <fieldset className='form-container'>
           <div className='form-top'>
             <div>
