@@ -588,6 +588,7 @@ textarea {
 @media screen and (max-width: 660px) {
   .navbar {
     flex-direction: column;
+    transition: unset;
   }
   .nav-links {
     display: none;
@@ -607,6 +608,9 @@ textarea {
     justify-content: space-between;
     align-items: center;
     width: 100%;
+  }
+  .testimonials-content.animate {
+    margin: 0 4em;
   }
 }
 
