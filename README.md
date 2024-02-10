@@ -10,7 +10,7 @@ our valued customers.
 
 - [Introduction](#intro)
 - [Features](#features)
-- [Testing](#testing
+- [Testing](#testing)
 - [Usage](#usage)
 - [Screenshots](#screenshots)
 
@@ -51,5 +51,18 @@ Unit tests for booking logic have been implemented using Jest.
 
 ## Screenshots
 
-![Screenshot 1](public/images/sc1.png) ![Screenshot 2](public/images/sc2.png)
-![Screenshot 3](public/images/sc3.png) ![Screenshot 4](public/images/sc4.png)
+#### Hero section
+
+<img src="public/images/sc1.png" width="500">
+
+#### About section
+
+<img src="public/images/sc2.png" width="500">
+
+#### Form section
+
+<img src="public/images/sc3.png" width="500">
+
+#### Confirmation message after form submission
+
+<img src="public/images/sc4.png" width="500">
