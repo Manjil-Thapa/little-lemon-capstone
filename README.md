@@ -1,70 +1,55 @@
-# Getting Started with Create React App
+# Little Lemon Restaurant Website
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Welcome to Little Lemon! This project is the capstone for the Meta Front-end
+Developer Professional Certificate, showcasing the skills acquired during the
+program. Built with create-react-app and styled with basic CSS featuring effects and
+animations, Little Lemon is designed to provide a seamless reservation experience for
+our valued customers.
 
-## Available Scripts
+## [Table of Contents](#intro)
 
-In the project directory, you can run:
+- [Introduction](#intro)
+- [Features](#features)
+- [Testing](#testing
+- [Usage](#usage)
+- [Screenshots](#screenshots)
 
-### `npm start`
+## Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Reservation Screen
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- Date Picker: Easily select the desired reservation date.
+- Time Input: Specify the preferred time for your reservation.
+- Number of Diners: Input the number of guests joining the dining experience.
+- Occasion Input: Share the purpose of your visit (e.g., birthday, anniversary).
+- Client side form validation
 
-### `npm test`
+### Customer Details Screen
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Name Fields: Enter your name of user
+- Contact Information: Provide an email for booking confirmation.
+- Required Field Indicators: Clearly marked fields ensure all necessary information
+  is provided.
+- Submit Button: Confirm and submit your reservation details for processing.
 
-### `npm run build`
+### Error handling
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- Input Warnings: Receive relevant warnings if required fields are left blank via
+  client side validation
+- Confirmation Message: Customers are informed upon submission of the reservation
+  form.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Testing
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Unit tests for booking logic have been implemented using Jest.
 
-### `npm run eject`
+## Usage
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+1. Access reservation via reserve button
+2. Fill in the required details for reservation
+3. Receive confirmation mesage upon form submission
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Screenshots
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+![Screenshot 1](public/images/sc1.png) ![Screenshot 2](public/images/sc2.png)
+![Screenshot 3](public/images/sc3.png) ![Screenshot 4](public/images/sc4.png)

@@ -54,6 +54,7 @@ const BookingForm = ({ availableTimes, updateTimes, formSubmit }) => {
                 onChange={handleInputChange}
                 minLength={2}
                 required
+                autoComplete='off'
               />
 
               <label htmlFor='email'>Email</label>
@@ -64,6 +65,7 @@ const BookingForm = ({ availableTimes, updateTimes, formSubmit }) => {
                 value={formData.email}
                 onChange={handleInputChange}
                 required
+                autoComplete='off'
               />
 
               <label htmlFor='guests'>Number of guests</label>
